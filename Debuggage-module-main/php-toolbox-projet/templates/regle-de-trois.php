@@ -29,7 +29,7 @@ template('header', array(
                             <div class="col">
                                 <label for="a" aria-hidden="true" hidden>Nombre A</label>
                                 <div class="input-group">
-                                    <input id="a" name="a" type="text" class="form-control">
+                                    <input id="a" name="a" type="number" class="form-control">
                                 </div>
                             </div>
 
@@ -39,7 +39,7 @@ template('header', array(
                             <div class="col">
                                 <label for="c" aria-hidden="true" hidden>Nombre C</label>
                                 <div class="input-group">
-                                    <input id="c" name="c" type="text" class="form-control">
+                                    <input id="c" name="c" type="number" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ template('header', array(
                             <div class="col">
                                 <label for="b" aria-hidden="true" hidden>Nombre B</label>
                                 <div class="input-group">
-                                    <input id="b" name="b" type="text" class="form-control">
+                                    <input id="b" name="b" type="number" class="form-control">
                                 </div>
                             </div>
 
@@ -58,7 +58,7 @@ template('header', array(
                             <div class="col">
                                 <label for="d" aria-hidden="true" hidden>Nombre D</label>
                                 <div class="input-group">
-                                    <input id="d" name="d" type="text" class="form-control" disabled value="X">
+                                    <input id="d" name="d" type="number" class="form-control" disabled value="X">
                                 </div>
                             </div>
                         </div>
@@ -95,6 +95,7 @@ template('header', array(
                 });
 
                 const result = await response.json();
+                console.log(result);
 
                 let inputName = Object.keys(result.data)[0];
 

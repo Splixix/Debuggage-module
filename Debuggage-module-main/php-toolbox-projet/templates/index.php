@@ -8,6 +8,7 @@ try {
     $routes = register_route(array(
         '/home',
         '/cesar',
+        '/mll',
         '/euros-dollars',
         '/pourcentage',
         '/decimal-hexadecimal',
